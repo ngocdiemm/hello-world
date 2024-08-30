@@ -3,18 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Đặt tiêu đề của trang web, đây là phần hiển thị trên tab của trình duyệt -->
     <title>My Introduction</title>
+    <!-- Liên kết đến file CSS bên ngoài để định dạng giao diện trang web -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Tạo một container để gói nội dung của trang -->
     <div class="container">
+        <!-- Tiêu đề chính của trang -->
         <h1>Hello, I'm Ngoc Diem!</h1>
+        
+        <!-- Hiển thị hình ảnh của mình -->
+        <img src="https://drive.google.com/file/d/1UEYqFC71xXMycYElKm14HUtMNgLAlQFv/view?usp=sharing" alt="Ngoc Diem" class="profile-pic">
+        
+        <!-- Giới thiệu bản thân -->
         <p>Welcome to my personal introduction page</p>
+        
+        <!-- Liên kết đến trang cá nhân trên Facebook -->
+        <a href="https://www.facebook.com/ngocdiem.ptnk/" target="_blank" class="personal-link">Visit My Personal Page</a>
+        
+        <!-- Nút bấm để hiển thị thêm thông tin -->
         <button id="moreInfoBtn">Learn More About Me</button>
+        
+        <!-- Div chứa thêm thông tin, ban đầu được ẩn đi -->
         <div id="moreInfo" class="hidden">
-            <p> I love pink</p>
+            <!-- Thông tin bổ sung về sở thích của bạn -->
+            <p>I love pink and enjoy exploring new things.</p>
         </div>
     </div>
+    <!-- Liên kết đến file JavaScript bên ngoài để thực thi các chức năng tương tác -->
     <script src="script.js"></script>
 </body>
 </html>
