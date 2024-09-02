@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Introduction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Meet Our Team</h1>
+        <!-- Define two buttons -->
+        <div class="tabs">
+            <button class="tablink" onclick="openTab(event, 'member1')">Ngoc Diem</button>
+            <button class="tablink" onclick="openTab(event, 'member2')">Duc Toan</button>
+        </div>
+
+        <!--The first member's profile -->
+        <div id="member1" class="tabcontent">
+            <h2>Ngoc Diem</h2>
+            <img src="https://drive.google.com/file/d/1UEYqFC71xXMycYElKm14HUtMNgLAlQFv/view?usp=sharing" alt="Ngoc Diem" class="profile-pic">
+            <p>Welcome to my personal introduction page.</p>
+            <a href="https://www.facebook.com/ngocdiem.ptnk/" target="_blank" class="personal-link">Visit My Personal Page</a>
+            <button class="moreInfoBtn" onclick="toggleInfo('info1')">Learn More About Me</button>
+            <div id="info1" class="hidden">
+                <p>I love pink and enjoy exploring new things.</p>
+            </div>
+        </div>
+
+        <!--The second member's profile -->
+        <div id="member2" class="tabcontent">
+            <h2>Duc Toan</h2>
+            <img src="https://via.placeholder.com/150" alt="Duc Toan" class="profile-pic">
+            <p>Welcome to my personal introduction page.</p>
+            <a href="https://www.facebook.com/profile.php?id=100012665323930" target="_blank" class="personal-link">Visit My Personal Page</a>
+            <button class="moreInfoBtn" onclick="toggleInfo('info2')">Learn More About Me</button>
+            <div id="info2" class="hidden">
+                <p>I am passionate about technology and love coding.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
