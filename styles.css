@@ -1,3 +1,4 @@
+/* General styling for the entire webpage */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,6 +10,7 @@ body {
     height: 100vh;
 }
 
+/* Styling for the container that holds the content */
 .container {
     width: 80%;
     max-width: 600px;
@@ -18,12 +20,14 @@ body {
     text-align: center;
 }
 
+/* Styling for the tabs section */
 .tabs {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
 
+/* Styling for each tab button */
 .tablink {
     background-color: #ddd;
     color: black;
@@ -34,14 +38,17 @@ body {
     transition: background-color 0.3s;
 }
 
+/* Styling for tab buttons when hovered */
 .tablink:hover {
     background-color: #ccc;
 }
 
+/* Hide the tab content by default */
 .tabcontent {
     display: none;
 }
 
+/* Styling for the profile picture */
 .profile-pic {
     width: 150px;
     height: 150px;
@@ -49,6 +56,7 @@ body {
     margin-bottom: 10px;
 }
 
+/* Styling for the personal link */
 .personal-link {
     display: block;
     margin-top: 10px;
@@ -56,14 +64,17 @@ body {
     color: #2196F3;
 }
 
+/* Styling for the personal link when hovered */
 .personal-link:hover {
     text-decoration: underline;
 }
 
+/* Class to hide elements */
 .hidden {
     display: none;
 }
 
+/* Styling for the 'Learn More' button */
 button.moreInfoBtn {
     background-color: #2196F3;
     color: white;
@@ -73,6 +84,7 @@ button.moreInfoBtn {
     margin-top: 10px;
 }
 
+/* Styling for the 'Learn More' button when hovered */
 button.moreInfoBtn:hover {
     background-color: #1e88e5;
 }
