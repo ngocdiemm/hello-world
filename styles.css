@@ -1,81 +1,78 @@
-/* Định dạng cơ bản cho trang web */
 body {
-    font-family: Arial, sans-serif; 
-    background-color: #f4f4f4; 
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
 }
 
-/* Định dạng cho phần chứa nội dung chính */
 .container {
-    background-color: #ffffff; 
-    padding: 20px; 
-    border-radius: 10px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-    text-align: center; 
+    width: 80%;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-/* Định dạng cho tiêu đề chính của trang */
-h1 {
-    color: #333; 
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-/* Định dạng cho hình ảnh hồ sơ */
-.profile-pic {
-    width: 150px; 
-    height: 150px; 
-    border-radius: 50%; 
-    margin: 20px 0; 
-    object-fit: cover; 
-}
-
-/* Định dạng cho các đoạn văn bản */
-p {
-    color: #555; 
-}
-
-/* Định dạng cho liên kết trang cá nhân */
-.personal-link {
-    display: inline-block;
-    margin-top: 10px;
-    font-size: 16px; 
-    color: #3498db;
-    text-decoration: none; 
-}
-
-/* Thay đổi kiểu dáng của liên kết khi di chuột qua */
-.personal-link:hover {
-    text-decoration: underline; 
-}
-
-/* Định dạng cho các nút bấm */
-button {
-    background-color: #3498db; 
-    color: white; 
+.tablink {
+    background-color: #ddd;
+    color: black;
+    padding: 10px 20px;
+    margin: 0 10px;
     border: none;
-    padding: 10px 20px; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    font-size: 16px;
-    margin-top: 20px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-/* Thay đổi màu nền của nút khi di chuột qua */
-button:hover {
-    background-color: #2980b9; 
+.tablink:hover {
+    background-color: #ccc;
 }
 
-/* Định dạng ẩn cho phần thông tin bổ sung */
+.tabcontent {
+    display: none;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.personal-link {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #2196F3;
+}
+
+.personal-link:hover {
+    text-decoration: underline;
+}
+
 .hidden {
-    display: none; 
+    display: none;
 }
 
-/* Định dạng cho phần thông tin bổ sung khi được hiển thị */
-#moreInfo {
-    margin-top: 20px; 
-    color: #333; 
+button.moreInfoBtn {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button.moreInfoBtn:hover {
+    background-color: #1e88e5;
 }

@@ -1,14 +1,35 @@
-// Lấy phần tử với id "moreInfoBtn" và gán sự kiện "click" cho nó
-document.getElementById("moreInfoBtn").addEventListener("click", function() {
-    var moreInfo = document.getElementById("moreInfo");
-    // Kiểm tra xem phần tử "moreInfo" có chứa class "hidden" không
-    if (moreInfo.classList.contains("hidden")) {
-        // Nếu có class "hidden", xóa class đó để hiển thị nội dung
-        moreInfo.classList.remove("hidden");
-        this.textContent = "Show Less";
-    } else {
-        // Nếu không có class "hidden", thêm class này vào để ẩn nội dung
-        moreInfo.classList.add("hidden");
-        this.textContent = "Learn More About Me";
+function openTab(evt, memberName) {
+    var i, tabcontent, tablinks;
+    
+    // Hide all tab contents
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
     }
+    
+    // Remove the background color of all tablinks/buttons
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    
+    // Show the current tab
+    document.getElementById(memberName).style.display = "block";
+    
+    // Add an active class to the button that opened the tab
+    evt.currentTarget.style.backgroundColor = "#ccc";
+}
+
+function toggleInfo(infoId) {
+    var info = document.getElementById(infoId);
+    if (info.style.display === "none" || info.style.display === "") {
+        info.style.display = "block";
+    } else {
+        info.style.display = "none";
+    }
+}
+
+// Open the first tab by default
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector(".tablink").click();
 });
